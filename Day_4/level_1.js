@@ -1,18 +1,18 @@
-// let inputAge = parseInt(prompt('Enter your age'));
-// let output = alert(`${inputAge >= 18 ? `You are old enough to drive` : `You are left with ${18 - inputAge} years to drive`}`);
+let inputAge = parseInt(prompt('Enter your age'));
+let output = alert(`${inputAge >= 18 ? `You are old enough to drive` : `You are left with ${18 - inputAge} years to drive`}`);
 
 
-// let yourAge = parseInt(prompt('Enter your age'));
-// let myAge = 24;
-// let whoIsOlder = '';
-// if(yourAge > myAge) {
-//     whoIsOlder = `You are ${yourAge - myAge} years older than me`;
-// } else if(myAge > yourAge) {
-//     whoIsOlder = `I am ${myAge - yourAge} years older than you`; 
-// }else {
-//     whoIsOlder = 'We are of same age';
-// };
-// console.log(whoIsOlder)
+let yourAge = parseInt(prompt('Enter your age'));
+let myAge = 24;
+let whoIsOlder = '';
+if(yourAge > myAge) {
+    whoIsOlder = `You are ${yourAge - myAge} years older than me`;
+} else if(myAge > yourAge) {
+    whoIsOlder = `I am ${myAge - yourAge} years older than you`; 
+}else {
+    whoIsOlder = 'We are of same age';
+};
+console.log(whoIsOlder)
 
 
 let a = 4;

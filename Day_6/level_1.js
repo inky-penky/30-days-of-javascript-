@@ -138,3 +138,11 @@ console.log(uniqueArray);
 
 
 // Question 15
+
+let char = "abcdefghijklmnopqrstuvwxyz1234567890";
+let randomChar = '';
+for(let i = 1; i <= 5; i++){
+    let randomNum = Math.floor(Math.random(i) * char.length)
+    randomChar += char[randomNum]
+}
+console.log(randomChar)

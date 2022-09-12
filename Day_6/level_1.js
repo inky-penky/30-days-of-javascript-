@@ -142,7 +142,7 @@ console.log(uniqueArray);
 let char = "abcdefghijklmnopqrstuvwxyz1234567890";
 let randomChar = '';
 for(let i = 1; i <= 5; i++){
-    let randomNum = Math.floor(Math.random(i) * char.length)
+    let randomNum = Math.floor(Math.random() * char.length)
     randomChar += char[randomNum]
 }
 console.log(randomChar)

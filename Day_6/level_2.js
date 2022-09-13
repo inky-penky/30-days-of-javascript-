@@ -63,6 +63,17 @@ console.log(countriesLength)
 // Question 6
 let countriesAbbrev = []
 for(let country of countries){
-    countriesAbbrev.push(country, country.slice(0, 3), country.length)
+    countriesAbbrev.push(country, country.slice(0, 3).toUpperCase(), country.length)
 }
 console.log(countriesAbbrev)
+
+
+// Question 7
+// let countryIncludes = []
+// for(let country of countries){
+//     if(country.includes('land')){
+//         countryIncludes.push(country)
+//     }else if(country.includes('land') == 0){
+//         console.log('All these countries are without land')
+// }
+// console.log(countryIncludes)

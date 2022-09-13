@@ -61,3 +61,8 @@ console.log(countriesLength)
 
 
 // Question 6
+let countriesAbbrev = []
+for(let country of countries){
+    countriesAbbrev.push(country, country.slice(0, 3), country.length)
+}
+console.log(countriesAbbrev)

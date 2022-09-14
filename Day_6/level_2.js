@@ -102,3 +102,44 @@ for(let i = 0; i < countries.length; i++){
     
 }
 console.log(longestChar)
+
+
+// Question 10
+let shortestChar = [];
+for(let i = 0; i < countries.length; i++){
+    shortestChar = countries[i];
+    
+}
+console.log(shortestChar)
+
+
+//Question 11
+const webTechs = [
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'React',
+    'Redux',
+    'Node',
+    'MongoDB'
+  ]
+let longestWord = [];
+for(let i = 0; i < webTechs.length; i++){
+    if(longestWord.length <= webTechs[i].length){
+        longestWord = webTechs[i]
+    }    
+}
+console.log(longestWord)
+
+
+// Question 12
+let webTechArr = webTechs
+for(let stack of webTechs){
+    webTechArr.push([stack])
+}
+console.log(webTechArr)
+
+
+
+
+//   const mernStack = ['MongoDB', 'Express', 'React', 'Node']

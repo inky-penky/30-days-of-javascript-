@@ -69,11 +69,36 @@ console.log(countriesAbbrev)
 
 
 // Question 7
-// let countryIncludes = []
-// for(let country of countries){
-//     if(country.includes('land')){
-//         countryIncludes.push(country)
-//     }else if(country.includes('land') == 0){
-//         console.log('All these countries are without land')
-// }
-// console.log(countryIncludes)
+let countryIncludes = []
+for(let country of countries){
+    if(country.includes('land')){
+        countryIncludes.push(country)
+    };
+    if(country.includes('land') == 0){
+        console.log('All these countries are without land')
+    }
+}
+console.log(countryIncludes)
+
+
+// Question 8
+let countrySubstring = []
+for(let country of countries){
+    if(country.endsWith('ia')){
+        countrySubstring.push(country)
+    } else if(country.endsWith('ia') == 0){
+        console.log('These countries ends without ia')
+    }
+}
+console.log(countrySubstring)
+
+
+// Question 9
+let longestChar = [];
+for(let i = 0; i < countries.length; i++){
+    if(longestChar.length <= countries[i].length){
+        longestChar = countries[i]
+    }
+    
+}
+console.log(longestChar)

@@ -128,18 +128,52 @@ for(let i = 0; i < webTechs.length; i++){
     if(longestWord.length <= webTechs[i].length){
         longestWord = webTechs[i]
     }    
-}
+};
 console.log(longestWord)
 
 
 // Question 12
-let webTechArr = webTechs
-for(let stack of webTechs){
-    webTechArr.push([stack])
+// let webTechArr = webTechs
+// for(let stack of webTechs){
+//     webTechArr.push([stack], stack.length)
+// };
+
+
+// Question 13
+const mernStack = ['MongoDB', 'Express', 'React', 'Node']
+let acronym = [];
+for(let stack of mernStack){
+    acronym.push(stack[0])
 }
-console.log(webTechArr)
+console.log(acronym)
 
 
+// Question 14
+const fullstack = ["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "MongoDB"];
+for(let stack of fullstack){
+    console.log(stack)
+}
 
 
-//   const mernStack = ['MongoDB', 'Express', 'React', 'Node']
+// Question 15
+let fruit = ['banana', 'orange', 'mango', 'lemon'];
+let newFruit = [];
+for(let i = fruit.length - 1; i >= 0; i--){
+    newFruit.push(fruit[i])
+}
+console.log(newFruit)
+
+
+// question 16
+const fullStack = [
+    ['HTML', 'CSS', 'JS', 'React'],
+    ['Node', 'Express', 'MongoDB']
+  ];
+let newStack = fullStack.join().toUpperCase().replace(",", " ");
+let finalStack;
+for(let stack of fullStack){
+    for(let one of stack){
+        finalStack = one.toUpperCase()
+        console.log(finalStack)
+    }
+}

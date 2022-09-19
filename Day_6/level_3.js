@@ -71,4 +71,4 @@ const reversedCountries = [];
 for (let i = countries.length - 1; i >= 0; i--) {
   reversedCountries.push(countries[i].toUpperCase());
 }
-console.log(reversedCountries);~
+console.log(reversedCountries)

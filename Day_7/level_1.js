@@ -49,3 +49,8 @@ console.log(volumeOfRectPrism(5, 5, 4))
 
 
 // Question 7
+function areaOfCircle(r) {
+    let area = Math.PI * r * r
+    return area;
+}
+console.log(areaOfCircle(3))

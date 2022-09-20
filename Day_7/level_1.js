@@ -33,3 +33,19 @@ console.log(areaOfRectangle(3, 4))
 
 
 // Question 5
+function perimeterOfRectangle(length, width) {
+    let perimeter = 2 * (length + width)
+    return perimeter;
+}
+console.log(perimeterOfRectangle(4, 4))
+
+
+// Question 6
+function volumeOfRectPrism(length, width, height) {
+    let volume = length * width * height
+    return volume;
+}
+console.log(volumeOfRectPrism(5, 5, 4))
+
+
+// Question 7

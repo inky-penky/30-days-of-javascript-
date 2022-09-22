@@ -15,10 +15,11 @@ function showDateTime() {
     let day = time.getDay();
     let month = time.getMonth();
     let year = time.getFullYear();
-    let showDate = day + '/' + month + '/' + year;
+    let getHours = time.getHours();
+    let getMinute = time.getMinutes();
+    let showDate = day + '/' + month + '/' + year + ' ' + getHours + ':' + getMinute;
     return showDate; 
-    
-}
+};
 console.log(showDateTime())
 
 

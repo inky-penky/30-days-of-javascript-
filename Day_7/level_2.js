@@ -10,3 +10,16 @@ console.log(printArray([1, 'we', 'see', 6, true]))
 
 
 // Question 4
+function showDateTime() {
+    let time = new Date();
+    let day = time.getDay();
+    let month = time.getMonth();
+    let year = time.getFullYear();
+    let showDate = day + '/' + month + '/' + year;
+    return showDate; 
+    
+}
+console.log(showDateTime())
+
+
+// Question 5

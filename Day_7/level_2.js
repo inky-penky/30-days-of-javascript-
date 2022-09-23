@@ -42,3 +42,13 @@ console.log(reverseArray([1, 2, 3, 4, 5, 6]))
 
 
 // question 7
+function capitalizeArray(array) {
+    let capitalize = [];
+    for(let i = 0; i < array.length; i++){
+        capitalize.push(array[i].toUpperCase())
+    }
+    return capitalize;
+}
+console.log(capitalizeArray(['He','me', 'so']))
+
+

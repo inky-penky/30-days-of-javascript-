@@ -24,3 +24,10 @@ console.log(showDateTime())
 
 
 // Question 5
+function swapValues(x, y) {
+    return x = y
+}
+console.log(swapValues(3, 4))
+
+
+// Question 6

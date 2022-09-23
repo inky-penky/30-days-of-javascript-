@@ -31,3 +31,14 @@ console.log(swapValues(3, 4))
 
 
 // Question 6
+function reverseArray(array) {
+    let reverseArr = [];
+    for(let i = array.length - 1; i >= 0; i--){
+        reverseArr.push(array[i])
+    }
+    return reverseArr;
+}
+console.log(reverseArray([1, 2, 3, 4, 5, 6]))
+
+
+// question 7

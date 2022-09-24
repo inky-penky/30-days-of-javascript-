@@ -52,3 +52,20 @@ function capitalizeArray(array) {
 console.log(capitalizeArray(['He','me', 'so']))
 
 
+// Question 8
+function addItem(item) {
+    let items = [];
+    for(let i = 0; i < item.length; i++){
+        items.push(item[i])
+    }
+    return items;
+}
+console.log(addItem([1, 2, 3, 'him']))
+
+
+// Question 9
+function removeItem(arr, index) {
+    arr.splice(index, 1)
+    return arr;
+}
+console.log(removeItem([1, 2, 3, 4, 5, 6, 7], 3))

@@ -69,3 +69,14 @@ function removeItem(arr, index) {
     return arr;
 }
 console.log(removeItem([1, 2, 3, 4, 5, 6, 7], 3))
+
+
+// Question 10
+// function sumOfNumbers(number) {
+//     let sum = 0;
+//     for(let i = number; i <= 0; i--){
+//         sum += number
+//     }
+//     return sum;
+// }
+// console.log(sumOfNumbers(4))

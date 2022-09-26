@@ -73,9 +73,12 @@ console.log(removeItem([1, 2, 3, 4, 5, 6, 7], 3))
 
 // Question 10
 function sumOfNumbers(number) {
-    let num = [];
-    
+    let num = 0;
+    for(let i = Math.min(...number); i <= Math.max(...number); i++){
+        num += i
+    }
     return num;
 }
+console.log(sumOfNumbers([2, 7]))
 
 // Question 11

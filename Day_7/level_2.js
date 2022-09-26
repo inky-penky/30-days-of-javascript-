@@ -72,6 +72,10 @@ console.log(removeItem([1, 2, 3, 4, 5, 6, 7], 3))
 
 
 // Question 10
-
+function sumOfNumbers(number) {
+    let num = [];
+    
+    return num;
+}
 
 // Question 11

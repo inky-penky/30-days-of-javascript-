@@ -81,4 +81,15 @@ function sumOfNumbers(number) {
 }
 console.log(sumOfNumbers([2, 7]))
 
+
 // Question 11
+function sumOfOdds(number) {
+    let oddNum = 0;
+    for(let i = Math.min(...number); i <= Math.max(...number); i++){
+        if(i % 2 == 1){
+            oddNum += i
+        }
+    }
+    return oddNum;
+}
+console.log(sumOfOdds([2, 5]))

@@ -106,3 +106,20 @@ function sumOfEven(number) {
     return evenNum
 }
 console.log(sumOfEven([1, 5]))
+
+
+// Question 13
+function evensAndOdds(number) {
+    let even = [];
+    let odd = [];
+    for(let i = 0; i <= number; i++){
+        if (i % 2 == 0) {
+            even.push([i])
+        }else if(i % 2 == 1){
+            odd.push([i])
+        }
+    }
+    console.log(`The number of evens are ${even.length}.`)
+    console.log(`The number of odds are ${odd.length}.`)
+}
+evensAndOdds(100)

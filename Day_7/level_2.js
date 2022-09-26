@@ -93,3 +93,16 @@ function sumOfOdds(number) {
     return oddNum;
 }
 console.log(sumOfOdds([2, 5]))
+
+
+// Question 12
+function sumOfEven(number) {
+    let evenNum = 0;
+    for(let i = Math.min(...number); i <= Math.max(...number); i++){
+        if(i % 2 == 0){
+            evenNum += i
+        }
+    }
+    return evenNum
+}
+console.log(sumOfEven([1, 5]))

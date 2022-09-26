@@ -123,3 +123,14 @@ function evensAndOdds(number) {
     console.log(`The number of odds are ${odd.length}.`)
 }
 evensAndOdds(100)
+
+
+// Question 14
+function sumOfNums(array) {
+    let sum = 0
+    for(let arr of array){
+        sum += arr;
+    }
+    return sum;
+}
+console.log(sumOfNums([1, 2, 3, 4]))

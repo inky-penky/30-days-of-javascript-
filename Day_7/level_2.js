@@ -138,10 +138,10 @@ console.log(sumOfNums([1, 2, 3, 4]))
 
 // Question 15
 function randomUserIp() {
-    let userIp;
+    let userIp = '';
     for(let i = 0; i <= 3; i++){
         let randomNum = Math.floor(Math.random() * 255)
-        userIp = `${randomNum}.${randomNum}.${randomNum}.${randomNum}`
+        userIp += `${randomNum}${'.'}`
     }
     return userIp
 }
@@ -153,16 +153,14 @@ function randomMacAddress() {
     let macAddress = "0123456789";
     let alphabets = "abcdef"
     let user = '';
-    for(let i = 1; i <= 12; i++){
+    for(let i = 1; i <= 6; i++){
         let randomNum = Math.floor(Math.random() * macAddress.length)
         let alphabetsRand = Math.floor(Math.random() * alphabets.length)
-        user = `${randomNum}${alphabets[alphabetsRand]}:
-        ${randomNum}${alphabets[alphabetsRand]}:
-        ${randomNum}${randomNum}:
-        ${randomNum}${alphabets[alphabetsRand]}:
-        ${randomNum}${randomNum}:
-        ${randomNum}${alphabets[alphabetsRand]}:` 
+        user += `${randomNum}${alphabets[alphabetsRand]}${':'}` 
     }
     return user;
 }
 console.log(randomMacAddress())
+
+
+// Question 17

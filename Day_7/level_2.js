@@ -134,3 +134,25 @@ function sumOfNums(array) {
     return sum;
 }
 console.log(sumOfNums([1, 2, 3, 4]))
+
+
+// Question 15
+function randomUserIp() {
+    let userIp;
+    for(let i = 0; i <= 3; i++){
+        let randomNum = Math.floor(Math.random() * 255)
+        userIp = `${randomNum}.${randomNum}.${randomNum}.${randomNum}`
+    }
+    return userIp
+}
+console.log(randomUserIp())
+
+
+// Question 16
+function randomMacAddress() {
+    let macAddress = "0a1b2c3d4e5f6789";
+    let user;
+    for(let i = 0; i < macAddress.length; i++){
+        
+    }
+}

@@ -150,9 +150,19 @@ console.log(randomUserIp())
 
 // Question 16
 function randomMacAddress() {
-    let macAddress = "0a1b2c3d4e5f6789";
-    let user;
-    for(let i = 0; i < macAddress.length; i++){
-        
+    let macAddress = "0123456789";
+    let alphabets = "abcdef"
+    let user = '';
+    for(let i = 1; i <= 12; i++){
+        let randomNum = Math.floor(Math.random() * macAddress.length)
+        let alphabetsRand = Math.floor(Math.random() * alphabets.length)
+        user = `${randomNum}${alphabets[alphabetsRand]}:
+        ${randomNum}${alphabets[alphabetsRand]}:
+        ${randomNum}${randomNum}:
+        ${randomNum}${alphabets[alphabetsRand]}:
+        ${randomNum}${randomNum}:
+        ${randomNum}${alphabets[alphabetsRand]}:` 
     }
+    return user;
 }
+console.log(randomMacAddress())

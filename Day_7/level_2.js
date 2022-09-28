@@ -179,5 +179,11 @@ console.log(randomHexaNumberGenerator())
 // Question 18
 function userIdGenerator() {
     let userIdChar = "0123456789abcdefghijklmnopqrstuvwxyz";
-    let userId
+    let userId = '';
+    for(let i = 0; i <= 6; i++){
+        let randomNum = Math.floor(Math.random() * userIdChar.length)
+        userId += userIdChar[randomNum]
+    }
+    return userId.toUpperCase();
 }
+console.log(userIdGenerator())

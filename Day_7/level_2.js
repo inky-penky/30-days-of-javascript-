@@ -165,11 +165,11 @@ console.log(randomMacAddress())
 
 // Question 17
 function randomHexaNumberGenerator() {
-    let hexNumber = "0123456789abcdef";
-    let randomHexCode = '';
-    let randomNum = Math.floor(Math.random() * 6)
+    let hexChar = "0123456789abcdef";
+    let randomHexCode = '#';
     for(let i = 1; i <= 6; i++){
-        randomHexCode += `${randomNum}`
+        let randomNum = Math.floor(Math.random() * hexChar.length)
+        randomHexCode += hexChar[randomNum]
     }
     return randomHexCode;
 }

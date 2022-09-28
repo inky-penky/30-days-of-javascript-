@@ -174,3 +174,10 @@ function randomHexaNumberGenerator() {
     return randomHexCode;
 }
 console.log(randomHexaNumberGenerator())
+
+
+// Question 18
+function userIdGenerator() {
+    let userIdChar = "0123456789abcdefghijklmnopqrstuvwxyz";
+    let userId
+}

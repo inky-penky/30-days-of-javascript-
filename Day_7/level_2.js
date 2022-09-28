@@ -156,7 +156,7 @@ function randomMacAddress() {
     for(let i = 1; i <= 6; i++){
         let randomNum = Math.floor(Math.random() * macAddress.length)
         let alphabetsRand = Math.floor(Math.random() * alphabets.length)
-        user += `${randomNum}${alphabets[alphabetsRand]}${':'}` 
+        user += `${randomNum}${alphabets[alphabetsRand]}:` 
     }
     return user;
 }
@@ -164,3 +164,13 @@ console.log(randomMacAddress())
 
 
 // Question 17
+function randomHexaNumberGenerator() {
+    let hexNumber = "0123456789abcdef";
+    let randomHexCode = '';
+    let randomNum = Math.floor(Math.random() * 6)
+    for(let i = 1; i <= 6; i++){
+        randomHexCode += `${randomNum}`
+    }
+    return randomHexCode;
+}
+console.log(randomHexaNumberGenerator())

@@ -28,3 +28,16 @@ console.log(rgbColorGenerator())
 
 
 // Question 3
+function arrayOfHexaColors(num) {
+    let hexCode = 'abcdef1234567890';
+    let hexCodeGenerated = [];
+    for(let i = 1; i <= num; i++){
+        for(let i = 1; i <= 6; i++){
+            let randomNum = Math.floor(Math.random() * hexCode.length)
+            hexCodeGenerated.push(hexCode[randomNum])
+        }
+        hexCodeGenerated 
+    }
+    return hexCodeGenerated;
+}
+console.log(arrayOfHexaColors(3))

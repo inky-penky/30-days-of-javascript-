@@ -45,6 +45,16 @@ console.log(arrayOfHexaColors(5))
 
 
 // Question 4
-function name(params) {
-    
+function arrayOfRgbColors(number) {
+    let arrOfRgb = []
+    for(let i = 1; i <= number; i++){
+        let rgb = 'rgb('
+        for(let j = 1; i <= 3; i++){
+            let randomNum = Math.floor(Math.random() * 255)
+            rgb += randomNum
+        }
+        arrOfRgb.push(`${rgb})`)
+    }
+    return arrOfRgb;
 } 
+console.log(arrayOfRgbColors(3))

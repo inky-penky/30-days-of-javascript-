@@ -51,10 +51,13 @@ function arrayOfRgbColors(number) {
         let rgb = 'rgb('
         for(let j = 1; i <= 3; i++){
             let randomNum = Math.floor(Math.random() * 255)
-            rgb += randomNum
+            rgb += `${randomNum},`
         }
         arrOfRgb.push(`${rgb})`)
     }
     return arrOfRgb;
 } 
 console.log(arrayOfRgbColors(3))
+
+
+// Question 5

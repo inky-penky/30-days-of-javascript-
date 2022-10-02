@@ -61,3 +61,14 @@ console.log(arrayOfRgbColors(3))
 
 
 // Question 5
+function convertHexaToRgb(hexCode) {
+    let hexChar = "0123456789abcdef";
+    let randomHexCode = '#';
+    for(let i = 1; i <= 6; i++){
+        let randomNum = Math.floor(Math.random() * hexChar.length)
+        randomHexCode += hexChar[randomNum]
+    }
+    return randomHexCode;
+    
+}
+console.log(convertHexaToRgb())

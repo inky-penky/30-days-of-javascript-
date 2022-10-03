@@ -62,13 +62,24 @@ console.log(arrayOfRgbColors(3))
 
 // Question 5
 function convertHexaToRgb(hexCode) {
-    let hexChar = "0123456789abcdef";
-    let randomHexCode = '#';
-    for(let i = 1; i <= 6; i++){
-        let randomNum = Math.floor(Math.random() * hexChar.length)
-        randomHexCode += hexChar[randomNum]
+    let hexCodeToRgb = ''
+
+    function hexColor(){
+        let hexChar = "0123456789abcdef";
+        let randomHexCode = '#';
+        for(let i = 1; i <= 6; i++){
+            let randomNum = Math.floor(Math.random() * hexChar.length)
+            randomHexCode += hexChar[randomNum]
+        }
+        return randomHexCode;
     }
-    return randomHexCode;
+    function rgbColor() {
+        rgb = 'rgb('
+        for(let i = 1; i <= 3; i++){
+            let randomNum = Math.floor(Math.random() * 255)
+            rgb += `${randomNum}`
+        }
+    }
     
 }
 console.log(convertHexaToRgb())

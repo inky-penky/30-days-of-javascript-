@@ -57,7 +57,7 @@ function arrayOfRgbColors(number) {
     }
     return arrOfRgb;
 } 
-console.log(arrayOfRgbColors(3))
+console.log(arrayOfRgbColors(2))
 
 
 // Question 5
@@ -76,3 +76,9 @@ function convertHexaToRgb(hexCode) {
     
 }
 console.log(convertHexaToRgb())
+
+
+// Question 6
+function convertRgbToHexa() {
+    
+}

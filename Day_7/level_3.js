@@ -82,3 +82,9 @@ console.log(convertHexaToRgb())
 function convertRgbToHexa() {
     
 }
+
+
+// Question 7
+function generateColors() {
+    
+}
